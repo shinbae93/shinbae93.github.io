@@ -132,12 +132,12 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
+/*==================== ADD SHADOW TO HEADER ====================*/
 function scrollHeader() {
     const nav = document.getElementById("header");
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if (this.scrollY >= 80) nav.classList.add("scroll-header");
-    else nav.classList.remove("scroll-header");
+    if (this.scrollY >= 80) nav.classList.add("scroll__header");
+    else nav.classList.remove("scroll__header");
 }
 window.addEventListener("scroll", scrollHeader);
 
