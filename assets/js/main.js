@@ -92,6 +92,18 @@ modalCloses.forEach((modalClose) => {
     });
 });
 
+// click outside services modal content to close
+document.addEventListener("click", function (e) {
+    if (
+        !e.target.closest(".services__modal-content") &&
+        !e.target.closest(".services__button")
+    ) {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove("active-modal");
+        });
+    }
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
