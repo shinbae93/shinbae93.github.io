@@ -1,24 +1,28 @@
 import { GithubOutlined, LinkedinFilled } from '@ant-design/icons'
 
+import avatarImg from '../../assets/avatar.jpg'
 import CV from '../../assets/cv.pdf'
-import heroImg from '../../assets/hero-img.png'
 import ThemeToggle from '../../components/ThemeToggle/ThemeToggle'
 
 export function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-row-reverse text-center items-center gap-5 justify-evenly h-dvh min-h-[500px]"
+      className="flex flex-row-reverse text-center items-center gap-28 justify-evenly h-dvh min-h-[500px]"
     >
       <div className="relative text-center">
-        <img src={heroImg} alt="Avatar" className="w-96 max-w-96 overflow-clip" />
+        <img
+          src={avatarImg}
+          alt="Avatar"
+          className="w-80 max-w-80 h-80 max-h-80 object-cover overflow-clip rounded-full"
+        />
         <span className="absolute right-0 top-0">
           <ThemeToggle />
         </span>
       </div>
       <div className="flex flex-col justify-center gap-5">
         <h1 className="text-5xl uppercase font-bold font-rubik-sans text-text">
-          Hung <br /> Nguyen
+          Hung Nguyen
         </h1>
         <h2 className="text-2xl uppercase font-bold text-text">Backend Engineer</h2>
         <span className="flex gap-6 justify-center">
