@@ -6,11 +6,4 @@ body {
   font-family: 'Roboto Mono', monospace;
   display: flex;
   justify-content: center;
-  margin: 0 auto 60px;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
 }

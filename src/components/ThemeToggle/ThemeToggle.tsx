@@ -1,4 +1,4 @@
-import { MoonOutlined, SunFilled } from '@ant-design/icons'
+import { MoonFilled, SunFilled } from '@ant-design/icons'
 
 import { THEME } from '@/constants'
 import { useTheme } from '@/hooks/useTheme'
@@ -8,7 +8,7 @@ const ThemeToggle = () => {
 
   return (
     <button onClick={() => setTheme(theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT)} className="p-2">
-      {theme === THEME.LIGHT ? <SunFilled className="text-2xl" /> : <MoonOutlined className="text-2xl" />}
+      {theme === THEME.LIGHT ? <SunFilled className="text-2xl" /> : <MoonFilled className="text-2xl dark:text-white" />}
     </button>
   )
 }
