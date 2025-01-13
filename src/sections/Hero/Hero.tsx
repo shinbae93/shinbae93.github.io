@@ -14,7 +14,7 @@ export function Hero() {
         <img
           src={avatarImg}
           alt="Avatar"
-          className="w-80 max-w-80 h-80 max-h-80 object-cover overflow-clip rounded-full"
+          className="w-96 max-w-96 h-96 max-h-96 object-cover overflow-clip rounded-full"
         />
         <span className="absolute right-0 top-0">
           <ThemeToggle />
