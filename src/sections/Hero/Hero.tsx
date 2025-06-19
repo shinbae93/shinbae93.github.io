@@ -1,6 +1,6 @@
 import { GithubOutlined, LinkedinFilled } from '@ant-design/icons'
 
-import avatarImg from '../../assets/avatar.jpg'
+import avatarImg from '../../assets/avatar.webp'
 import CV from '../../assets/cv.pdf'
 import ThemeToggle from '../../components/ThemeToggle/ThemeToggle'
 
@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-row-reverse text-center items-center gap-28 justify-evenly h-dvh min-h-[500px]"
+      className="flex flex-row-reverse justify-center gap-x-24 text-center items-center h-dvh min-h-[500px]"
     >
       <div className="relative text-center">
         <img
