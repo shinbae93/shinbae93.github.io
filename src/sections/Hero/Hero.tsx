@@ -11,11 +11,10 @@ export function Hero() {
       className="flex flex-row-reverse justify-center gap-x-24 text-center items-center h-dvh min-h-[500px]"
     >
       <div className="relative text-center">
-        <img
-          src={avatarImg}
-          alt="Avatar"
-          className="w-96 max-w-96 h-96 max-h-96 object-cover overflow-clip rounded-full"
-        />
+        <div className="w-80 max-w-80 h-80 max-h-80 overflow-clip rounded-full">
+          <img src={avatarImg} alt="Avatar" className="object-cover" />
+        </div>
+
         <span className="absolute right-0 top-0">
           <ThemeToggle />
         </span>
