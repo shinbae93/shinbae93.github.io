@@ -1,53 +1,34 @@
-import { GithubOutlined, LinkedinFilled } from '@ant-design/icons'
+import { DownOutlined } from '@ant-design/icons'
 
 import avatarImg from '../../assets/avatar.webp'
-import CV from '../../assets/cv.pdf'
-import ThemeToggle from '../../components/ThemeToggle/ThemeToggle'
+
+const yearsOfExperience = new Date().getFullYear() - 2022
 
 export function Hero() {
   return (
-    <section
-      id="hero"
-      className="flex flex-row-reverse justify-center gap-x-24 text-center items-center h-dvh min-h-[500px]"
-    >
-      <div className="relative text-center">
-        <div className="w-80 max-w-80 h-80 max-h-80 overflow-clip rounded-full">
-          <img src={avatarImg} alt="Avatar" className="object-cover" />
+    <section id="hero" className="min-h-dvh flex flex-col justify-center pt-14 bg-background">
+      <div className="max-w-5xl mx-auto px-6 w-full flex flex-col md:flex-row items-center gap-12 py-20">
+        <div className="flex-1 flex flex-col gap-6">
+          <h1 className="font-rubik-sans font-bold text-4xl md:text-5xl leading-tight text-text">
+            Hi, I'm Hung Nguyen.
+          </h1>
+          <p className="font-mono text-base text-text-muted max-w-md leading-relaxed">
+            Backend engineer with {yearsOfExperience}+ years of experience building high-performance APIs and
+            distributed systems, from monolith to microservices.
+          </p>
+          <div>
+            <a href="#about">
+              <button className="inline-flex items-center gap-2 bg-btn text-btn-text text-sm font-mono font-semibold px-6 py-3 rounded-full shadow-button transition duration-200 ease-in-out hover:opacity-90 hover:scale-105">
+                Explore More <DownOutlined className="text-xs" />
+              </button>
+            </a>
+          </div>
         </div>
-
-        <span className="absolute right-0 top-0">
-          <ThemeToggle />
-        </span>
-      </div>
-      <div className="flex flex-col justify-center gap-5">
-        <h1 className="text-5xl uppercase font-bold font-rubik-sans text-text dark:text-white">Hung Nguyen</h1>
-        <h2 className="text-2xl uppercase font-bold text-text dark:text-white">Backend Engineer</h2>
-        <span className="flex gap-6 justify-center">
-          <a
-            href="https://github.com/shinbae93"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-zinc-600"
-          >
-            <GithubOutlined className="text-3xl dark:text-white" />
-          </a>
-          <a
-            href="https://linkedin.com/in/nvqhung93"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-zinc-600"
-          >
-            <LinkedinFilled className="text-3xl dark:text-white" />
-          </a>
-        </span>
-        <p className="max-w-[30ch] self-center text-xl font-light text-text dark:text-white">
-          Passionate about delivering high-quality, maintainable, and performance-driven backend solutions.
-        </p>
-        <a href={CV} download>
-          <button className="bg-btn dark:bg-white text-btn-text dark:text-text border-none rounded-2xl w-32 h-12 font-bold text-xl shadow-button transition duration-200 ease-in-out hover:shadow-lg hover:scale-105">
-            Resume
-          </button>
-        </a>
+        <div className="flex-shrink-0">
+          <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-card-border shadow-card">
+            <img src={avatarImg} alt="Hung Nguyen" className="w-full h-full object-cover " />
+          </div>
+        </div>
       </div>
     </section>
   )
