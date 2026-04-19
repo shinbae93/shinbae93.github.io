@@ -26,7 +26,7 @@ export function Hero() {
         </div>
         <div className="flex-shrink-0">
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-card-border shadow-card">
-            <img src={avatarImg} alt="Hung Nguyen" className="w-full h-full object-cover " />
+            <img src={avatarImg} alt="Hung Nguyen" className="w-full h-full object-cover object-top" />
           </div>
         </div>
       </div>
